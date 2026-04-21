@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 28.8,
+      "left": 340.84,
+      "attrs": { "env": "micropython-20231005-v1.21.0" }
+    },
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -204.6, "left": -93.2, "attrs": {} },
+    {
+      "type": "board-ssd1306",
+      "id": "oled",
+      "top": 70.34,
+      "left": 221.03,
+      "attrs": { "i2cAddress": "0x3c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "oled:GND", "bb1:bn.20", "black", [ "v-48", "h-76.8" ] ],
+    [ "oled:VCC", "bb1:bp.21", "red", [ "v0" ] ],
+    [ "oled:SCL", "esp:22", "green", [ "v-38.4", "h29.1", "v-38.4", "h163.2", "v57.6" ] ],
+    [ "oled:SDA", "esp:21", "green", [ "v-124.8", "h192.07", "v144" ] ]
+  ],
+  "dependencies": {}
+}
