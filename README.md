@@ -5,6 +5,12 @@ A MicroPython-based IoT project running on an **ESP32** that subscribes to an MQ
 >  Fully simulated on Wokwi — no hardware required to run it.
 
 > This project is the **receiver side** of a two-node secure IoT communication system. See the [sender node](https://github.com/Sakni-Anfel/cryptage-AES) for the full picture.
+> the receiver
+<img width="698" height="318" alt="image" src="https://github.com/user-attachments/assets/7c1057f5-00d0-4714-b8f2-88be6e1b536c" />
+> the sender
+<img width="772" height="469" alt="image" src="https://github.com/user-attachments/assets/a191bb4d-5c58-4a4c-8198-b4db0455b074" />
+
+
 
 ---
 
